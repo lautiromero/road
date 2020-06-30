@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="fontawesome/master.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Road | Agencia Digital</title>
   </head>
   <body>
@@ -17,44 +19,8 @@
       <source src="images/header-back.mp4" type="video/mp4">
     </video>
 <header class="header content">
-      <!-- <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">
-          <img src="images/logo-blanco.png" alt="" width="150px">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav navbar-right">
-
-          </ul>
-          <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-             <ul class="navbar-nav ml-auto">
-               <li class="nav-item active">
-                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" href="#">Link</a>
-               </li>
-               <li class="nav-item dropdown">
-                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                   Dropdown
-                 </a>
-                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                   <a class="dropdown-item" href="#">Action</a>
-                   <a class="dropdown-item" href="#">Another action</a>
-                   <div class="dropdown-divider"></div>
-                   <a class="dropdown-item" href="#">Something else here</a>
-                 </div>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link disabled" href="#">Disabled</a>
-               </li>
-             </ul>
-         </div>
-        </div>
-      </nav> -->
+      <!-- <div class="topbar"></div> -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-md-0">
           <ul class="navbar-nav ml-auto text-center">
@@ -89,15 +55,45 @@
   <!-- <div class="content">
     <button id="myBtn" onclick="myFunction()">Pause</button>
   </div> -->
-  <div class="texto-inicio text-center d-flex justify-content-center">
-    <span class="text-uppercase">Tu camino al mundo digital</span>
+  <div class="inicio-container">
+    <div class="texto-inicio text-center d-flex justify-content-center">
+      <span class="text-uppercase">Tu camino al mundo digital</span>
+    </div>
+    <div class="text-center sub-inicio">
+      <span>Creamos productos digitales para impulsar tu negocio.</span>
+    </div>
   </div>
-  <div class="text-center sub-inicio">
-    <span>Creamos productos digitales para impulsar tu negocio.</span>
+
+  <div class="wrap-arrow">
+    <img src="images/arrow.svg" id="arrow" class="animated bounce">
   </div>
+
+
 
 </header>
+<section class="first-sec py-0 ">
+  <div class="container-fluid px-0 py-0">
+    <div class="row nosotros-text">
+      <div class="col-md-6 d-flex align-items-center flex-wrap">
+        <div class="px-5">
+          <h1 class="main-text">Sobre nosotros</h1>
+          <p>Somos una agencia de diseño y publicidad ubicada en Argentina.
+          </p>
+          <p>Formamos un equipo de diseñadores, desarrolladores, realizadores
+          audiovisuales y expertos en marketing.</p>
+        </div>
 
+      </div>
+      <div class="col-md-6 bg-we">
+        <img src="images/we-img.jpg" class="img-fluid" alt="">
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="second-sec">
+  
+</section>
 
 <script>
 // Get the video
@@ -124,5 +120,11 @@ function myFunction() {
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    </script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

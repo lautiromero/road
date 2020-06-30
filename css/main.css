@@ -5,6 +5,10 @@
 .header .navbar {
   background-color: transparent !important;
 }
+
+.nav-link{
+  /* font-weight: 600!important; */
+}
 /* Style the video: 100% width and height to cover the entire window */
 #myVideo {
   position: fixed;
@@ -16,8 +20,8 @@
 
 /* Add some content at the bottom of the video/page */
 .content {
-  position: fixed;
-  bottom: 0;
+  /* position: fixed;
+  bottom: 0; */
   color: #f1f1f1;
   width: 100%;
   padding: 20px;
@@ -34,14 +38,21 @@
 h1, h2, h3, h4, h5, span{
   font-family: 'Poppins', sans-serif!important;
 }
+.inicio-container{
+  position: absolute;
+  width: 100%;
+}
 .texto-inicio{
   font-size: 4.5rem;
   line-height: 1.2;
   font-weight: 600 !important;
   padding-top: 7%;
+  width: 100%;
 }
 .sub-inicio{
   font-size: 22px;
+  position: absolute;
+  width: 100%;
 }
 .road-btn{
   fill: #fff;
@@ -50,7 +61,7 @@ h1, h2, h3, h4, h5, span{
   border-width: 2px;
   border-color: #fff;
   border-radius: 0 0 0 0;
-  padding: 16px 40px;
+  padding: 12px 30px;
 }
 .roadt-btn{
   fill: #fff;
@@ -59,6 +70,115 @@ h1, h2, h3, h4, h5, span{
   border-width: 2px;
   border-color: #fff;
   border-radius: 0 0 0 0;
-  padding: 16px 40px;
+  padding: 12px 30px;
   background-color: transparent;
+}
+.button-container{
+  padding-top: 4.4rem;
+}
+.button-container .road-btn{
+  margin-left: 15px;
+}
+
+.button-container .roadt-btn{
+  margin-right: 15px;
+}
+.topbar{
+  height: 28px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.32);
+  position: absolute;
+  left: 0;
+  top:0;
+}
+body {
+  background-color: #999;
+}
+
+.wrap-arrow {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.wrap-arrow img {
+  height: 50px;
+  width: auto;
+  cursor: pointer;
+}
+
+.wrap-arrow img {
+  margin: 0px 0 0 -40px;
+  line-height: 60px;
+  position: absolute;
+  left: 50%;
+  bottom: 20%;
+}
+
+.bounce {
+  animation-iteration-count: infinite;
+  animation-duration: 1.5s;
+  animation: bounce 2.5s ease infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  15.55556% {
+    transform: translateY(0);
+  }
+  21.11111% {
+    transform: translateY(0);
+  }
+  32.22222% {
+    transform: translateY(-15px);
+  }
+  47.77778% {
+    transform: translateY(0);
+  }
+  53.33333% {
+    transform: translateY(-15px);
+  }
+  64.44444% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.first-sec{
+  position: relative;
+  /* height: 700px; */
+  width: 100%;
+  background-color: rgb(240, 240, 240);
+}
+.main-text{
+  font-weight: 600;
+  color: #4f4f4f;
+  font-size: 3rem;
+}
+.b-left{
+  border-left: 15px solid #d74e09;
+  padding-left: 15px;
+  border-radius: 10px;
+}
+.nosotros-text{
+  font-size: 30px;
+  color: rgb(128, 128, 128);
+}
+.nosotros-text p{
+  margin-bottom: 0px!important;
+  line-height: 1.2!important;
+}
+.bg-we{
+  background-color: #FFBE2E;
+}
+.second-sec{
+  width: 100%;
+  height: 800px;
+  background-color: #171717;
+  position: relative;
 }
