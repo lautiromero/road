@@ -9,12 +9,12 @@ $( document ).ready(function() {
 
     $('#s-web')
     .hover(function(){
-        $('.second-sec').css('background-color','#52cecc');
+        $('.second-sec').css('background-color','#0e8781');
         
     });
 
     $('.services-list a').mouseleave(function(){
-        $('.second-sec').css('background-color','#2c2d2e');
+        $('.second-sec').css('background-color','#171717');
     })
 
 
