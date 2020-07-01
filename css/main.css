@@ -212,9 +212,8 @@ body {
   justify-content: center;
 }
 .service-box{
-  /* display: none; */
   width: 100%;
-  display: flex;
+  display: none;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
@@ -223,5 +222,5 @@ body {
 .service-box p{
   color: rgb(240, 240, 240);
   font-size: 24px;
-  padding-top: 20px;
+  padding-top: 35px;
 }
