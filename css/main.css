@@ -1,3 +1,6 @@
+/* body{
+  overflow-x: hidden;
+} */
 .header {
   background-size: cover;
   min-height: 100vh;
@@ -6,9 +9,6 @@
   background-color: transparent !important;
 }
 
-.nav-link{
-  /* font-weight: 600!important; */
-}
 /* Style the video: 100% width and height to cover the entire window */
 #myVideo {
   position: fixed;
@@ -16,12 +16,11 @@
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
+  max-width: 100%;
 }
 
 /* Add some content at the bottom of the video/page */
 .content {
-  /* position: fixed;
-  bottom: 0; */
   color: #f1f1f1;
   width: 100%;
   padding: 20px;
@@ -36,7 +35,7 @@
   cursor: pointer;
 }
 h1, h2, h3, h4, h5, span{
-  font-family: 'Poppins', sans-serif!important;
+  font-family: 'Poppins', sans-serif;
 }
 .inicio-container{
   position: absolute;
@@ -83,14 +82,7 @@ h1, h2, h3, h4, h5, span{
 .button-container .roadt-btn{
   margin-right: 15px;
 }
-.topbar{
-  height: 28px;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.32);
-  position: absolute;
-  left: 0;
-  top:0;
-}
+
 body {
   background-color: #999;
 }
@@ -160,6 +152,15 @@ body {
   color: #4f4f4f;
   font-size: 3rem;
 }
+.secondary-text{
+  font-weight: 600;
+  color: #969696;
+  font-size: 13px;
+  font-family: 'Arimo', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+}
 .b-left{
   border-left: 15px solid #d74e09;
   padding-left: 15px;
@@ -179,6 +180,36 @@ body {
 .second-sec{
   width: 100%;
   height: 800px;
-  background-color: #171717;
+  background-color: #2c2d2e;
   position: relative;
+}
+/* .second-sec .secondary-text{
+  display:inline-block;
+  border-bottom:2px solid #aaa;
+  padding-bottom:2px;
+} */
+.text-mark{
+  color: #aaaaaa;
+}
+.services-list a{
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  color: rgb(240, 240, 240);
+  letter-spacing: -1px;
+  font-size: 35px;
+  padding: 20px 0;
+  font-weight: 400;
+  transition-duration: .9s;
+  cursor: pointer;
+}
+.services-list a:hover{
+  color: rgb(240, 240, 240);
+}
+.services-container{
+  display: flex;
+  align-items: center;
+}
+.services-container img{
+  display: none;
 }
