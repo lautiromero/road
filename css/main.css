@@ -224,3 +224,13 @@ body {
   font-size: 24px;
   padding-top: 35px;
 }
+
+.portfolio{
+  height: 1000px;
+  background-color: rgb(240, 240, 240);
+  width: 100%;
+  position: relative;
+}
+.etiquetas-container{
+  width: 100%;
+}
