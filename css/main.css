@@ -34,7 +34,7 @@
   color: #fff;
   cursor: pointer;
 }
-h1, h2, h3, h4, h5, span{
+h1, h2, h3, h4, h5, span, p{
   font-family: 'Poppins', sans-serif;
 }
 .inicio-container{
@@ -145,11 +145,11 @@ body {
   position: relative;
   /* height: 700px; */
   width: 100%;
-  background-color: rgb(240, 240, 240);
+  background-color: #FFBE2E;
 }
 .main-text{
   font-weight: 600;
-  color: #4f4f4f;
+  color: #110B0B;
   font-size: 3rem;
 }
 .secondary-text{
@@ -167,8 +167,9 @@ body {
   border-radius: 10px;
 }
 .nosotros-text{
-  font-size: 30px;
-  color: rgb(128, 128, 128);
+  font-size: 22px;
+  color: #ffffff;
+  padding-top: 15px;
 }
 .nosotros-text p{
   margin-bottom: 0px!important;
@@ -226,11 +227,36 @@ body {
 }
 
 .portfolio{
-  height: 1000px;
-  background-color: rgb(240, 240, 240);
+  background-color: #f59f7e;
   width: 100%;
   position: relative;
+}
+#sec-port{
+  color: #171717;
 }
 .etiquetas-container{
   width: 100%;
 }
+.title-port{
+  font-size: 35px;
+  font-weight: 500;
+}
+.etiqueta{
+  color: rgb(240, 240, 240);
+  padding: 7.5px 15px;
+  font-weight: 400;
+  font-size: .8rem;
+  letter-spacing: 0.22rem;
+  text-transform: uppercase;
+  margin-right: 1.5rem;
+  display: inline-block;
+  line-height: 1.75;
+}
+.port-box img{
+  transition-duration: .5s ;
+}
+/*
+.port-box img:hover{
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+} */
