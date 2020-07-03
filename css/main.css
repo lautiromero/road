@@ -567,13 +567,13 @@ textarea.input2 + .focus-input2::after {
 
 /*------------------------------------------------------------------
 [ Responsive ]*/
-
+/*
 @media (max-width: 576px) {
   .wrap-contact2 {
-    /* padding: 10px 15px 10px 15px; */
+     padding: 10px 15px 10px 15px;
   }
 }
-
+*/
 
 
 /*------------------------------------------------------------------
