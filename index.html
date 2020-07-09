@@ -16,33 +16,27 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- FORM -->
     <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-  <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-  <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-  <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="css/util.css">
-    <link rel="stylesheet" type="text/css" href="css/main-form.css">
-  <!--===============================================================================================-->
+
     <title>Road - Agencia Digital</title>
   </head>
   <body>
+
+<header class="header content">
+
     <!-- The video -->
     <video autoplay muted loop id="myVideo">
       <source src="images/header-back.mp4" type="video/mp4">
     </video>
-<header class="header content">
 
       <!-- <div class="topbar"></div> -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-none d-md-flex">
       <div class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-md-0">
           <ul class="navbar-nav ml-auto text-center">
               <li class="nav-item active">
                   <a class="nav-link" href="#">HOME</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="#">SERVICIOS</a>
+                  <a class="nav-link ancla" href="#" data-ancla="servicios">SERVICIOS</a>
               </li>
           </ul>
       </div>
@@ -50,17 +44,17 @@
           <a class="mx-auto" href="#">
               <img src="images/logo-box-blanco.png" width="160px" class="">
           </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+          <button id="click" class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
               <span class="navbar-toggler-icon"></span>
           </button>
       </div>
       <div class="navbar-collapse collapse w-100 dual-collapse2 order-2 order-md-2">
           <ul class="navbar-nav mr-auto text-center">
               <li class="nav-item">
-                  <a class="nav-link" href="#">NOSOTROS</a>
+                  <a class="nav-link ancla" href="#" data-ancla="nosotros">NOSOTROS</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="#">CONTACTO</a>
+                  <a class="nav-link ancla" href="#" data-ancla="contacto">CONTACTO</a>
               </li>
           </ul>
       </div>
@@ -78,16 +72,16 @@
     </div>
   </div>
 
-  <div class="wrap-arrow">
+  <div class="wrap-arrow ancla" data-ancla="nosotros">
     <img src="images/arrow.svg" id="arrow" class="animated bounce">
   </div>
 
 
 
 </header>
-<section class="first-sec py-0 ">
+<section class="first-sec py-0 " id="nosotros">
   <div class="container-fluid px-0 py-0">
-    <div class="row nosotros-text">
+    <div class="row nosotros-text mx-0">
       <div class="col-md-6 d-flex align-items-center flex-wrap">
         <div class="px-5">
           <h1 class="main-text">Sobre Road</h1>
@@ -105,7 +99,7 @@
     </div>
   </div>
 </section>
-<section class="second-sec">
+<section class="second-sec" id="servicios">
   <div class="row pt-5 px-5">
     <div class="col-md-5 px-5 pt-5">
       <h1 class="secondary-text">Nos especializamos en</h1>
@@ -159,7 +153,7 @@
         <div class="port-box px-5">
           <img src="images/portfolio/1.png" alt="" class="img-fluid">
         </div> 
-        <div class="d-flex align-items-center flex-wrap justify-content-center p-5" data-aos="fade-up-left">
+        <div class="d-flex align-items-center flex-wrap justify-content-center py-4" data-aos="fade-up-left">
           <div class="">
             <h4 class="text-center title-port pb-3" >Lion Corporation</h4>
             <span class="etiqueta">INSTITUCIONAL</span>
@@ -222,7 +216,7 @@
 
   </div>
 </section>
-<section class="contact px-5">
+<section class="contact px-5" id="contacto">
   
   <h1 class="secondary-text pb-5 px-5">tu consulta no molesta</h1>
   <div class="container">
@@ -235,8 +229,9 @@
           <li><h2>Adm: <a href="">+54 9 351 389-9551</a></h2></li>
           <li><h2><a href="">info@agenciaroad.com</a></h2></li>
           <li class="social-links">
-            <a href="#" class="fab fa-facebook"></a>
-            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" id="facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" id="twitter"><i class="fab fa-twitter"></i>  </a>
+            <a href="" id="instagram"><i class="fab fa-instagram"></i></a>  
           </li>
         </ul>
       </div>
@@ -249,18 +244,22 @@
                   Escribinos
                 </span> -->
       
-                <div class="wrap-input2 validate-input" data-validate="Name is required">
-                  <input class="input2" type="text" name="name">
+                <div class="wrap-input2 validate-input" data-validate="Ingrese su nombre">
+                  <input class="input2" type="text" name="nombre">
                   <span class="focus-input2" data-placeholder="NOMBRE"></span>
                 </div>
       
-                <div class="wrap-input2 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                <div class="wrap-input2 validate-input" data-validate = "Ingrese un email válido">
                   <input class="input2" type="text" name="email">
                   <span class="focus-input2" data-placeholder="EMAIL"></span>
                 </div>
+                <div class="wrap-input2 validate-input">
+                  <input class="input2" type="text" name="telefono">
+                  <span class="focus-input2" data-placeholder="TELÉFONO"></span>
+                </div>
       
-                <div class="wrap-input2 validate-input" data-validate = "Message is required">
-                  <textarea class="input2" name="message"></textarea>
+                <div class="wrap-input2 validate-input" data-validate = "Escriba su consulta">
+                  <textarea class="input2" name="mensaje"></textarea>
                   <span class="focus-input2" data-placeholder="CONSULTA"></span>
                 </div>
       
@@ -280,11 +279,63 @@
     </div>
   </div>
 </section>
+<div class="">
+
+  <!----------- Footer ------------>
+  <footer class="footer-bs">
+      <div class="row">
+        <div class="col-md-3 footer-brand animated fadeInLeft">
+            <h2>Logo</h2>
+              <p>Suspendisse hendrerit tellus laoreet luctus pharetra. Aliquam porttitor vitae orci nec ultricies. Curabitur vehicula, libero eget faucibus faucibus, purus erat eleifend enim, porta pellentesque ex mi ut sem.</p>
+              <p>© 2014 BS3 UI Kit, All rights reserved</p>
+          </div>
+        <div class="col-md-4 footer-nav animated fadeInUp">
+            <h4>Mapa del sitio</h4>
+            <div class="col-md-6">
+                  <ul class="list">
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Contacts</a></li>
+                      <li><a href="#">Terms & Condition</a></li>
+                      <li><a href="#">Privacy Policy</a></li>
+                  </ul>
+              </div>
+          </div>
+        <div class="col-md-2 footer-social animated fadeInDown">
+            <h4>Follow Us</h4>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">RSS</a></li>
+              </ul>
+          </div>
+        <div class="col-md-3 footer-ns animated fadeInRight">
+            <h4>Newsletter</h4>
+              <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
+              <p>
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                      <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
+                    </span>
+                  </div><!-- /input-group -->
+               </p>
+          </div>
+      </div>
+  </footer>
+  <section class="socket py-3">
+    <p>© 2020 ROAD - Todos los derechos reservados</p>
+  </section>
+
+</div>
 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
