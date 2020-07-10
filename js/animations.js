@@ -64,4 +64,11 @@ $( document ).ready(function() {
       $("html,body").animate({scrollTop: $(codigo).offset().top}, 2000);
     });
 
+    //Menu mobile
+    var toggleButton = document.querySelector('.toggle-menu');
+    var navBar = document.querySelector('.nav-bar');
+    toggleButton.addEventListener('click', function () {
+        navBar.classList.toggle('toggle');
+    });
+
 });
