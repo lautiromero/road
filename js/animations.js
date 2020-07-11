@@ -71,4 +71,8 @@ $( document ).ready(function() {
         navBar.classList.toggle('toggle');
     });
 
+    $('.nav-link').on('click', function(){
+        navBar.classList.toggle('toggle');
+    })
+
 });

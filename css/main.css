@@ -930,6 +930,22 @@ margin-bottom:10px;
   .services-list{
     display: none;
   }
+  .second-sec{
+    background-color: #966e6a;
+  }
+  .etiqueta{
+    margin: 0;
+  }
+  .contact ul h1{
+    font-size: 35px;
+  }
+  .contact ul h2{
+    font-size: 20px;
+    padding-bottom: 0;
+  }
+  .social-links{
+    padding-top: 20px;
+  }
 }
 
 @media (min-width : 992px){
