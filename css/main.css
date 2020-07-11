@@ -307,6 +307,9 @@ body {
   display: flex;
   justify-content: center;
   display: -webkit-flex; /* NEW */
+  flex-wrap: wrap;
+  align-items: center;
+  -webkit-flex-wrap: wrap; /* NEW */
 }
 .port-box img{
   transition-duration: .5s ;
