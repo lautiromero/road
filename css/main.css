@@ -306,6 +306,7 @@ body {
 .port-box{
   display: flex;
   justify-content: center;
+  display: -webkit-flex; /* NEW */
 }
 .port-box img{
   transition-duration: .5s ;
