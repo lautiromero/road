@@ -365,6 +365,18 @@ body {
 #instagram{
   padding: 0.3em 0.55em;
 }
+#twitter-f{
+  padding: 0;
+  box-shadow: none;
+}
+#facebook-f{
+  padding: 0;
+  box-shadow: none;
+}
+#instagram-f{
+  padding: 0;
+  box-shadow: none;
+}
 /*---------------------------------------------*/
 input {
 	outline: none;
