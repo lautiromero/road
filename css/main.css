@@ -365,6 +365,9 @@ body {
 #instagram{
   padding: 0.3em 0.55em;
 }
+.footer-ns .social-links a:hover{
+  background-color: transparent;
+}
 #twitter-f{
   padding: 0;
   box-shadow: none;
