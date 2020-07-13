@@ -14,6 +14,9 @@
     <link href="fontawesome/brands.min.css" rel="stylesheet">
     <link href="fontawesome/solid.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#944c50">
     <!-- FORM -->
     <!--===============================================================================================-->
 
@@ -24,7 +27,7 @@
 <header class="header content" id="home">
 
     <!-- The video -->
-    <video autoplay muted loop id="myVideo">
+    <video autoplay muted loop playsinline id="myVideo">
       <source src="images/header-back.mp4" type="video/mp4">
     </video>
 
@@ -204,7 +207,7 @@
 
   </div>
 </section>
-<section class="portfolio py-5 px-md-5 px-4 text-center">
+<section class="portfolio py-5 px-md-5 px-4">
   <div class="container-fluid px-md-5 pt-md-5">
     <h1 class="secondary-text" id="sec-port">ÚTIMOS TRABAJOS REALIZADOS</h1>
    
@@ -214,7 +217,7 @@
           <img src="images/portfolio/1.png" alt="" class="img-fluid">
         </div> 
         <div class="d-flex align-items-center flex-wrap justify-content-center py-4" data-aos="fade-up-left">
-          <div class="">
+          <div class="text-center">
             <h4 class="text-center title-port pb-3" >Lion Corporation</h4>
             <span class="etiqueta">INSTITUCIONAL</span>
             <span class="etiqueta">VIDEOLOG</span>
@@ -229,7 +232,7 @@
           <img src="images/portfolio/2.png" alt="" class="img-fluid">
         </div>
         <div class="d-flex align-items-center flex-wrap justify-content-center py-4" data-aos="fade-up-left">
-          <div class="">
+          <div class="text-center">
             <h4 class="text-center title-port pb-3" >Conductas Caninas</h4>
             <span class="etiqueta">LANDING PAGE</span>
             <span class="etiqueta">INSTITUCIONAL</span>
@@ -247,7 +250,7 @@
           <img src="images/portfolio/3.png" alt="" class="img-fluid">
         </div> 
         <div class="d-flex align-items-center flex-wrap justify-content-center py-4" data-aos="fade-up-left">
-          <div class="">
+          <div class="text-center">
             <h4 class="text-center title-port pb-3" >GENFM 107.5</h4>
             <span class="etiqueta">RADIO ONLINE</span>
             <span class="etiqueta">DIARIO DIGITAL</span>
@@ -261,7 +264,7 @@
           <img src="images/portfolio/4.png" alt="" class="img-fluid">
         </div>
         <div class="d-flex align-items-center flex-wrap justify-content-center py-4" data-aos="fade-up-left">
-          <div class="">
+          <div class="text-center">
             <h4 class="text-center title-port pb-3" >Ugolino Peterlini & Asoc.</h4>
             <span class="etiqueta">INSTITUCIONAL</span>
             <span class="etiqueta">DISEÑO GRÁFICO</span>
@@ -285,9 +288,9 @@
         <ul class="list-unstyled pt-3">
           <li><h1>Agencia ROAD</h1></li>
           <li><h2>Córdoba, Argentina</h2></li>
-          <li><h2>Ventas: <a href="">+54 9 3541 57-1425</a></h2></li>
-          <li><h2>Adm: <a href="">+54 9 351 389-9551</a></h2></li>
-          <li><h2><a href="">info@agenciaroad.com</a></h2></li>
+          <li><h2>Ventas: <a href="tel:+5493541571425">+54 9 3541 57-1425</a></h2></li>
+          <li><h2>Adm: <a href="tel:+5493513899551">+54 9 351 389-9551</a></h2></li>
+          <li><h2><a href="mailto:info@agenciaroad.com">info@agenciaroad.com</a></h2></li>
           <li class="social-links">
             <a href="#" id="facebook"><i class="fab fa-facebook"></i></a>
             <a href="#" id="twitter"><i class="fab fa-twitter"></i>  </a>
@@ -296,30 +299,30 @@
         </ul>
       </div>
       <div class="col-md-6">
+        <div class="respuesta"></div>
         <div class="bg-contact2">
           <div class="container-contact2">
             <div class="wrap-contact2">
-              <form class="contact2-form validate-form pt-4">
+              <form class="contact2-form validate-form pt-4" id="contacto-form" action="output.php">
                 <!-- <span class="contact2-form-title">
                   Escribinos
                 </span> -->
-      
                 <div class="wrap-input2 validate-input" data-validate="Ingrese su nombre">
-                  <input class="input2" type="text" name="nombre">
+                  <input class="input2" type="text" name="nombre" required>
                   <span class="focus-input2" data-placeholder="NOMBRE"></span>
                 </div>
       
                 <div class="wrap-input2 validate-input" data-validate = "Ingrese un email válido">
-                  <input class="input2" type="text" name="email">
+                  <input class="input2" type="text" name="email" required>
                   <span class="focus-input2" data-placeholder="EMAIL"></span>
                 </div>
                 <div class="wrap-input2 validate-input">
-                  <input class="input2" type="text" name="telefono">
+                  <input class="input2" type="text" name="telefono" required>
                   <span class="focus-input2" data-placeholder="TELÉFONO"></span>
                 </div>
       
                 <div class="wrap-input2 validate-input" data-validate = "Escriba su consulta">
-                  <textarea class="input2" name="mensaje"></textarea>
+                  <textarea class="input2" name="mensaje" required></textarea>
                   <span class="focus-input2" data-placeholder="CONSULTA"></span>
                 </div>
       

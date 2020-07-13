@@ -74,6 +74,35 @@ $( document ).ready(function() {
     $('.nav-link').on('click', function(){
         navBar.classList.toggle('toggle');
     })
+     
+});
+$( window ).on( "load", function() { 
+    $(".loader-page").css({visibility:"hidden",opacity:"0"}) 
+})
 
-      $(".loader-page").css({visibility:"hidden",opacity:"0"})
+
+$("#contacto-form").submit(function(e) {
+
+    e.preventDefault(); // avoid to execute the actual submit of the form.
+
+    var form = $(this);
+    var url = form.attr('action');
+    
+    $.ajax({
+           type: "POST",
+           url: url,
+           data: form.serialize(), // serializes the form's elements.
+           beforeSend: function(  ) {
+            $('#contacto-form').hide();
+            $('.respuesta').css('display','flex');
+            $(".loader-page").css({visibility:"visible",opacity:"1"}) 
+           },
+           success: function(data)
+           {
+               $('.respuesta').text(data);
+               $(".loader-page").css({visibility:"hidden",opacity:"0"}) 
+           }
+         });
+
+    
 });
