@@ -74,11 +74,13 @@ $( document ).ready(function() {
     $('.nav-link').on('click', function(){
         navBar.classList.toggle('toggle');
     })
-     
+    // $('#myVideo').on("play", function() {
+    //     $(".loader-page").css({visibility:"hidden",opacity:"0"}) 
+    // });
+    //$('#myVideo-m').on("play", function() {
+        $(".loader-page").css({visibility:"hidden",opacity:"0"}) 
+   // });
 });
-$( window ).on( "load", function() { 
-    $(".loader-page").css({visibility:"hidden",opacity:"0"}) 
-})
 
 
 $("#contacto-form").submit(function(e) {
