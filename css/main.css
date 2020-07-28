@@ -167,7 +167,7 @@ body {
   position: relative;
   /* height: 700px; */
   width: 100%;
-  background-color: #FFBE2E;
+  background-color: #E4B13A;
 }
 .main-text{
   font-weight: 600;
@@ -197,9 +197,9 @@ body {
   margin-bottom: 0px!important;
   line-height: 1.2!important;
 }
-.bg-we{
-  background-color: #FFBE2E;
-}
+/* .bg-we{
+  background-color: #E4B13A;
+} */
 .second-sec{
   width: 100%;
   background-color: #171717;
@@ -326,7 +326,7 @@ body {
 }
 .contact ul h1{
   font-size: 3rem;
-  color: #FFBE2E;
+  color: #E4B13A;
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
   padding-bottom: 20px;
@@ -343,7 +343,7 @@ body {
   color: #816363;
 }
 .contact a:hover{
-  color: #FFBE2E;
+  color: #E4B13A;
 }
 .social-links a {
   display: inline-block;
@@ -353,7 +353,7 @@ body {
   margin-right: 12px;
 }
 .social-links a:hover{
-  background-color: #FFBE2E;
+  background-color: #E4B13A;
   color: white;
 }
 #twitter{
@@ -525,10 +525,10 @@ iframe {
   transition: all 0.4s;
 
   background: FFBE2E;
-  background: -webkit-linear-gradient(45deg, #FFBE2E, #e53935);
-  background: -o-linear-gradient(45deg, #FFBE2E, #e53935);
-  background: -moz-linear-gradient(45deg, #FFBE2E, #e53935);
-  background: linear-gradient(45deg, #FFBE2E, #e53935);
+  background: -webkit-linear-gradient(45deg, #E4B13A, #e53935);
+  background: -o-linear-gradient(45deg, #E4B13A, #e53935);
+  background: -moz-linear-gradient(45deg, #E4B13A, #e53935);
+  background: linear-gradient(45deg, #E4B13A, #e53935);
 }
 
 .focus-input2::after {
@@ -618,7 +618,7 @@ textarea.input2 + .focus-input2::after {
   width: 300%;
   height: 100%;
   /* background: #756969; */
-  background-color: #FFBE2E;
+  background-color: #E4B13A;
   top: 0;
   left: -100%;
 
