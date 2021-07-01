@@ -15,7 +15,7 @@ $mensaje = "Nombre: $nombre.  \n\n E-mail: $email.  \n\n Teléfono: $telefono.  
 // Datos de la cuenta de correo utilizada para enviar vía SMTP
 $smtpHost = "smtp.gmail.com";  // Dominio alternativo brindado en el email de alta
 $smtpUsuario = "agenciaroadinfo@gmail.com";  // Mi cuenta de correo
-$smtpClave = "Ventasroad";  // Mi contraseña
+$smtpClave = "Contraseña";  // Mi contraseña
 
 // Email donde se enviaran los datos cargados en el formulario de contacto
 $emailDestino = "info@agenciaroad.com";
